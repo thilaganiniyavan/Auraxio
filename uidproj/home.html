@@ -1,0 +1,32 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Welcome User</h2>
+    <button onclick="logout()">Logout</button>
+
+    <h3>Direct Messages</h3>
+    <select id="dmSelect">
+        <!-- Direct messages will be populated here -->
+    </select>
+    <button onclick="openDM()">Open DM</button>
+
+    <h3>Group Chats</h3>
+    <select id="gcSelect">
+        <!-- Group chats will be populated here -->
+    </select>
+    <button onclick="openGC()">Open Group Chat</button>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/script.js" type="module"></script>
+<script src="js/firestore.js" type="module"></script>
+</body>
+</html>

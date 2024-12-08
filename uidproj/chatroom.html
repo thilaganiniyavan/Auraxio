@@ -1,0 +1,28 @@
+<!-- chatroom.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatroom</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Chatroom</h2>
+    <div id="messages"></div>
+    <input type="file" id="imageInput">
+    <button onclick="sendImage()">Send Image</button>
+    <input type="text" id="messageInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="goToHome()">Back to Home</button>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/chatroom.js"></script>
+    <script src="js/script.js" type="module"></script>
+<script src="js/firestore.js" type="module"></script>
+<script src="js/storage.js" type="module"></script>
+
+</body>
+</html>
